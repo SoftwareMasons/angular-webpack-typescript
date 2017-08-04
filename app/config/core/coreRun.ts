@@ -1,4 +1,4 @@
-import {TransitionService} from "../../../node_modules/ui-router-core/lib/index";
+import { TransitionService } from 'angular-ui-router';
 
 export interface CustomRootScope extends ng.IRootScopeService {
     changingState: boolean

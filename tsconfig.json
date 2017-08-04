@@ -1,12 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
     "sourceMap": true,
-    "experimentalDecorators": true
+    "target": "es5",
+    "types": [ "node" ],
+    "typeRoots": [ "../node_modules/@types" ]
   },
-  "files": [
-    "index.ts",
-    "globals.d.ts",
-    "node_modules/ui-router-core/lib/index.d.ts"
+  "include": [
+    "./app/**/*.ts",
+    "./app/**/*.scss",
+    "./app/**/*.html",
+    "./node_modules/@types/**/*.d.ts",
+    "./node_modules/@uirouter/core/lib/index.d.ts"
   ]
 }
